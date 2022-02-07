@@ -8,10 +8,10 @@
 <h3>Инструкция по быстрому запуску:</h3>
 
 <ul>
-<li>Клонируйте репозиторий: git clone https://github.com/nataliafront/ggdrop.git</li>
-<li>Перейдите в папку с проектом cd ggdrop</li>
-<li>Установите зависимости: yarn install</li>
-<li>Запустите проект в dev режиме: yarn dev</li>
+<li>Клонируйте репозиторий: <code>git clone https://github.com/nataliafront/ggdrop.git</code></li>
+<li>Перейдите в папку с проектом <code>cd ggdrop</code></li>
+<li>Установите зависимости: <code>yarn install</code></li>
+<li>Запустите проект в dev режиме: <code>yarn dev</code></li>
 </ul>
 
 Если вы все правильно сделали, то у вас должен открыться локальный сервер в браузере на порту 3000
