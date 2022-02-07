@@ -1,0 +1,130 @@
+.sandwich {
+    display: none;
+
+    @media screen and (max-width: 1300px) {
+        display: block;
+    }
+
+    &__open-btn {
+        display: block;
+        background-color: transparent;
+        padding: 0;
+        border: none;
+        outline: none;
+    }
+
+    &__close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: block;
+        background-color: transparent;
+        padding: 0;
+        border: none;
+        outline: none;
+    }
+
+    &__close-icon {
+        width: 15px;
+        height: 15px;
+
+        svg {
+            width: 100%;
+            height: auto;
+
+            path {
+                stroke: #ffffff;
+            }
+        }
+    }
+
+    &__line {
+        display: block;
+        width: 22px;
+        height: 3px;
+        border-radius: 5px;
+        background-color: #ffffff;
+
+        &:not(:last-child) {
+            margin-bottom: 4px;
+        }
+    }
+
+    &__content {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        right: -100%;
+        top: 0;
+        z-index: 9;
+
+        &--active {
+            right: 0;
+        }
+    }
+
+    &__menu {
+        position: fixed;
+        height: 100%;
+        width: 320px;
+        background-color: #2e2f40;
+        right: -320px;
+        top: 0;
+        padding: 5px 0;
+        transition: 0.5s;
+        z-index: 99;
+
+        &--opened {
+            right: 0;
+        }
+    }
+
+    &__submenu {
+        margin: 20px;
+        .menu__list {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__profile {
+        margin: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .profile__button-notify {
+            order: 1;
+        }
+
+        .user-prev {
+            order: 2;
+        }
+
+        .profile__button-exit {
+            order: 3;
+        }
+
+        .profile__button-refill {
+            order: 4;
+            margin-right: 0;
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+
+    &__bonuses {
+        width: max-content;
+        padding: 20px;
+        margin: 0 auto;
+        border-radius: 12px;
+    }
+
+    &__social {
+        margin-top: 20px;
+
+        .social__list {
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Главная страница</title>
+        @@include('./layouts/default.html')
+    </head>
+    <body>
+        @@include('../blocks/modules/header/header.html')    
+        <main class="main">  
+            @@include('../blocks/modules/banner/banner.html')   
+            <div class="cases">
+                <div class="cases__header">
+                    <div class="cases__img">
+                        <img width="484" height="202" src="./images/content/cases-header-img.png" alt="Изображение в шапке блока">
+                    </div>
+                </div>
+                @@include('../blocks/modules/cases-list/cases-list.html')  
+            </div>
+        </main>
+        
+
+        @@include('../blocks/modules/footer/footer.html') 
+        <script src="js/vendor/libs.min.js"></script>
+        <script src="js/main.min.js"></script>
+        <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg" style="display: block;">
+            <clipPath id="cross" clipPathUnits="objectBoundingBox">
+                <path d="M6.68135 1.95394C6.91703 0.874808 8.00352 0 9.10809 0H51.1081C52.2127 0 52.917 0.87481 52.6814 1.95394L46.7069 29.3091C46.4713 30.3883 45.3848 31.2631 44.2802 31.2631H2.28021C1.17564 31.2631 0.471266 30.3883 0.70695 29.3091L6.68135 1.95394Z" fill="#DC4B42" transform="scale(0.0190, 0.0295)"/>
+            </clipPath>
+        </svg>
+        <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg" style="display: block;">
+            <clipPath id="cross1" clipPathUnits="objectBoundingBox">
+                <rect width="64" height="38" rx="2" transform="scale(0.0150, 0.0270) matrix(1 0 -0.213371 0.976971 8.10809 0)" fill="#EEAC64"/>
+            </clipPath>
+        </svg>
+    </body>
+</html>

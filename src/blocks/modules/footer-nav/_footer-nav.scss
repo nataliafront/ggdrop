@@ -1,0 +1,29 @@
+.footer-nav {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        @media screen and (max-width: 900px) {
+            flex-direction: row;
+        }
+    }
+
+    &__item {
+        &:hover {
+            .footer-nav__link {
+                color: $text-yellow;
+            }
+        }
+    }
+    &__link {
+        display: block;
+        text-decoration: none;
+        font-weight: 350;
+        font-size: 14px;
+        line-height: 17px;
+        color: #90929e;
+        transition: 0.2s;
+    }
+}

@@ -1,0 +1,45 @@
+.header {
+    padding-top: 16px;
+    padding-left: 30px;
+    padding-right: 18px;
+    display: flex;
+
+    @media screen and (max-width: 1100px) {
+        padding: 0;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (max-width: 1100px) {
+            display: none;
+        }
+    }
+
+    &__right {
+        flex: 1;
+        overflow-y: visible;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.header-bottom {
+    background: #21232f;
+    border-radius: 0px 0px 12px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 13px 10px 13px 29px;
+
+    @media screen and (max-width: 1300px) {
+        display: none;
+    }
+
+    &__user-prev {
+        margin-right: 22px;
+    }
+}

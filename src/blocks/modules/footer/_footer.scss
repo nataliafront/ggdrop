@@ -1,0 +1,172 @@
+.footer {
+    background: linear-gradient(180deg, #17171f 0%, #14141c 100%);
+    padding-bottom: 133px;
+    position: relative;
+
+    @media screen and (max-width: 900px) {
+        padding-bottom: 70px;
+    }
+
+    @media screen and (max-width: 500px) {
+        padding-bottom: 40px;
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 338px;
+        background-image: url("../../../images/content/footer-img1.png");
+        width: 435px;
+        height: 212px;
+
+        @media screen and (max-width: 1700px) {
+            left: 0;
+        }
+
+        @media screen and (max-width: 900px) {
+            display: none;
+        }
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        right: 191px;
+        background-image: url("../../../images/content/footer-img2.png");
+        background-size: 588px 610px;
+        width: 588px;
+        height: 610px;
+        background-repeat: no-repeat;
+
+        @media screen and (max-width: 1860px) {
+            background-size: 450px 467px;
+            width: 450px;
+            height: 467px;
+            top: -50px;
+        }
+
+        @media screen and (max-width: 1700px) {
+            right: 100px;
+        }
+
+        @media screen and (max-width: 1600px) {
+            right: 60px;
+        }
+
+        @media screen and (max-width: 1400px) {
+            right: 15px;
+            background-size: 350px 363px;
+            width: 350px;
+            height: 363px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            display: none;
+        }
+    }
+
+    &__top {
+        padding-top: 18px;
+        display: flex;
+        gap: 20px;
+
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-right {
+            background: linear-gradient(
+                260.7deg,
+                rgba(26, 26, 32, 0.5) 19.27%,
+                rgba(29, 29, 37, 0.5) 90.31%
+            );
+            border-radius: 80px;
+            flex: 1;
+            margin-right: -106px;
+            padding: 70px 70px 70px 84px;
+
+            @media screen and (max-width: 1860px) {
+                margin-right: 0;
+            }
+
+            @media screen and (max-width: 1400px) {
+                padding: 40px;
+            }
+
+            @media screen and (max-width: 768px) {
+                padding: 10px;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    &__copyright {
+        margin-bottom: 35px;
+        padding-left: 36px;
+        padding-top: 34px;
+
+        @media screen and (max-width: 900px) {
+            padding-top: 0;
+            padding-left: 0;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__bottom {
+        margin-top: 68px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 1200px) {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        @media screen and (max-width: 900px) {
+            margin-top: 30px;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 610px;
+            height: 275px;
+            background: rgba(21, 21, 29, 0.8);
+            backdrop-filter: blur(12px);
+            right: 170px;
+            bottom: 0;
+            z-index: 2;
+
+            @media screen and (max-width: 1400px) {
+                right: 0;
+            }
+        }
+
+        &-right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            z-index: 2;
+            gap: 10px;
+        }
+
+        &-social {
+            z-index: 2;
+        }
+
+        &-email {
+            margin-right: 40px;
+
+            @media screen and (max-width: 1200px) {
+                margin-right: 0;
+            }
+        }
+    }
+}

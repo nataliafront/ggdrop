@@ -1,0 +1,19 @@
+.statistic {
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 0;
+        row-gap: 40px;
+        max-width: 500px;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 1200px) {
+            max-width: none;
+        }
+
+        @media screen and (max-width: 650px) {
+            row-gap: 20px;
+            max-width: none;
+        }
+    }
+}
